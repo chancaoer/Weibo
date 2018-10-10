@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.bean">
+    <!-- name指定POJO类，table指定对应数据库的表 -->
+	<class name="User" table="t_user" lazy="false">
+
+		<id name="id">
+		   <!-- 主键生成策略 -->
+			<generator class="native" />
+		</id>
+		
+		<!-- POJO属性及表中字段的对应 -->
+		<property name="name" column="name" />
+		<property name="password" column="password" />
+		<property name="sex" column="sex" />
+		<property name="birthday" column="birthday" />
+		<property name="email" column="email" unique="true" />
+		<property name="phone" column="phone" />
+		<property name="faceing" column="faceing" />
+
+	</class>
+
+</hibernate-mapping>

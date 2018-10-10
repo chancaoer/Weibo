@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.bean">
+
+	<class name="UserMsgIndex" table="t_user_msg_index" lazy="false">
+
+		<id name="id">
+			<generator class="native" />
+		</id>
+		<property name="user_id" column="user_id" />
+		<property name="author_id" column="author_id" />
+		<property name="msg_id" column="msg_id" />
+		<property name="r_time" column="r_time" />
+
+	</class>
+
+</hibernate-mapping>

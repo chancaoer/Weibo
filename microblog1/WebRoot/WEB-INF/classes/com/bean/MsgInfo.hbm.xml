@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.bean">
+
+	<class name="MsgInfo" table="t_msg_info" lazy="false">
+
+		<id name="id">
+			<generator class="native" />
+		</id>
+		<property name="user_id" column="user_id" />
+		<property name="content" column="content" />
+		<property name="w_type" column="w_type" />
+		<property name="commented_count" column="commented_count" />
+		<property name="comment_count" column="comment_count" />
+		<property name="transferred_count" column="transferred_count" />
+		<property name="transfer_count" column="transfer_count" />
+		<property name="r_time" column="r_time" />
+
+
+
+	</class>
+
+</hibernate-mapping>

@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+
+		<title>微博</title>
+
+		<style type="text/css">
+body {
+	background-image: url(text.txt); /* for IE6 */
+	background-image: url(images/main_bg.jpg);
+	background-attachment: fixed;
+}
+
+#bottomNav {
+	z-index: 999;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	_position: absolute; /* for IE6 */
+	_top: expression(documentElement.scrollTop +        
+		      documentElement.clientHeight-this.offsetHeight); /* for IE6 */
+	overflow: visible;
+}
+
+#menu {
+	width: 960px;
+	height: 40px;
+	margin: 0 auto;
+	padding: 0;
+	background: url(images/6848ce01gw1e45k714tiyj20p005kt9t.jpg) repeat-x left top;
+}
+
+#menu ul {
+	margin: 0;
+	padding: 0px 0px 0px 25px;
+	list-style: none;
+	line-height: normal;
+}
+
+#menu li {
+	float: left;
+}
+
+#menu a {
+	display: block;
+	height: 18px;
+	margin-right: 3px;
+	float: left;
+	padding: 12px 40px 0px 40px;
+	background: url(../images/img06.jpg) no-repeat right 10px;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #FFFFFF;
+	border: none;
+}
+
+#menu a:hover,#menu .current_page_item a {
+	
+}
+
+#menu .current_page_item a {
+	padding-left: 0;
+}
+
+#menu a:hover {
+	text-decoration: underline;
+}
+</style>
+	</head>
+	<body>
+		<div id="bottomNav">
+			<div id="menu">
+				<ul>
+				
+					<li class="current_page_item">
+						<a href="/microblog/index.jsp" target="ifrm">主页</a>
+					</li>
+					<li>
+						<a href="/microblog/usergetUsers.action" target="ifrm">找人</a>
+					</li>
+					<li>
+						<a href="/microblog/usergetUsersFollows.action" target="ifrm">已收听</a>
+					</li>
+					<li>
+						<a href="#">微频道</a>
+					</li>
+
+					<li>
+						<a href="#">应用</a>
+					</li>
+					<li>
+						<a href="/microblog/login.jsp">退出</a>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+		<div  style="height: 100%; margin-top: 100px;" align="center">
+			<iframe src="index.jsp" width="960px" height="900px"
+				onload="this.height=iframe1.document.body.scrollHeight"
+				frameborder="0" scrolling="no" name="ifrm"></iframe>
+		</div>
+	</body>
+
+</html>

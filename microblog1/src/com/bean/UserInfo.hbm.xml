@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.bean">
+
+	<class name="UserInfo" table="t_user_info" lazy="false">
+
+		<id name="id">
+			<generator class="native" />
+		</id>
+		<property name="user_id" column="user_id" />
+		<property name="msg_count" column="msg_count" />
+		<property name="fans_count" column="fans_count" />
+		<property name="follow_count" column="follow_count" />
+
+	</class>
+
+</hibernate-mapping>
